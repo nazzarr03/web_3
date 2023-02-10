@@ -1,0 +1,36 @@
+.dad-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+
+}
+
+.square {
+  background-color: #9c9c8a;
+  width: 70px;
+  height: 70px;
+}
+
+
+.main-container {
+  display: grid;
+  border-radius: 5px;
+  grid-template-columns: repeat(8, 1fr);
+  height: 560px;
+  /* 70px * 8 = 560px */
+  width: 560px;
+  overflow: hidden;
+}
+
+.files:nth-of-type(odd) .square:nth-of-type(even) {
+  background-color: #566796;
+}
+
+.files:nth-of-type(even) .square:nth-of-type(odd) {
+  background-color: #566796;
+}
+
+img {
+  width: 100%;
+}
